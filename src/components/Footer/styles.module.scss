@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     height: 100%;
 
     background-color: #b38aae;
@@ -23,7 +24,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     height: 100%;
 
     background-color: #a58ab3;
@@ -39,8 +41,15 @@
   height: 50px;
 
   color: #121012;
-  font-size: 23px;
-  font-weight: 900;
+  text-align: center;
+  font-size: 0.6em;
 
   background-color: #d9d9d9;
+}
+
+@media (width <= 425px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

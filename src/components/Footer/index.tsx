@@ -1,8 +1,7 @@
 import styles from "./styles.module.scss";
 
-const owner_name = "owner_name";
-const developer_name = "developer_name";
-const designer_name = "designer_name";
+const PRODUCT_OWNER = "owner_name";
+const BUILDER_NAME = "L.A. Solutions";
 
 function Footer() {
   return (
@@ -17,8 +16,13 @@ function Footer() {
       </div>
       <div className={styles.reservedRights}>
         <p>
-          All rights reserved by {owner_name} - Powered by {developer_name} -
-          Designed by {designer_name}
+          Todos los derechos reservados por {PRODUCT_OWNER} - Built by{" "}
+          <a
+            href={"https://www.linkedin.com/company/81790558/"}
+            target="_blank"
+          >
+            {BUILDER_NAME}
+          </a>
         </p>
       </div>
     </>

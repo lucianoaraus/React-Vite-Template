@@ -1,1 +1,1 @@
-# React-Vite-Template
+# react-vite-template
